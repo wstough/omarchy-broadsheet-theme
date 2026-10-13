@@ -4,19 +4,19 @@ mode = "light"
 
 # The one spot of color: a deep "link" blue
 accent = "#1A4F8B"
-selection = "#DDD8CB"
-muted = "#8C8880"            # thin gray rules, comments, inactive things
+selection = "#D5CEBE"
+muted = "#8E897F"            # thin gray rules, comments, inactive things
 
 # Paper
-background = "#FBF9F4"         # paper white, faintly warm
-dark_background = "#F2EFE7"
-darker_background = "#E7E3D9"
-lighter_background = "#EEEBE2"
+background = "#EEEAE0"         # bone: soft, unbleached paper
+dark_background = "#E6E1D6"
+darker_background = "#DBD5C8"
+lighter_background = "#E9E5DB"
 
 # Ink
-foreground = "#111111"
+foreground = "#1C1B19"          # warm ink, softer than pure black
 dark_foreground = "#66635D"    # bylines & captions
-light_foreground = "#333333"
+light_foreground = "#3A3835"
 bright_foreground = "#000000"  # true black for emphasis
 
 # Terminal colors, kept as dark, desaturated printing inks
@@ -36,6 +36,6 @@ bright_cyan = "#35838C"
 bright_blue = "#2E66A8"
 bright_magenta = "#8E4A82"
 
-# Window borders: black ink rule for the focused window, gray for the rest
-hyprland_active_border = "rgb(111111)"
-hyprland_inactive_border = "rgba(8c8880aa)"
+# Window borders: the accent blue marks the focused window, a faint rule for the rest
+hyprland_active_border = "rgb(1A4F8B)"
+hyprland_inactive_border = "rgba(8e897f66)"
