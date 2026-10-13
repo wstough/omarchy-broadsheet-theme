@@ -1,0 +1,41 @@
+# Broadsheet — an Omarchy theme that reads like a good newspaper.
+# Every app Omarchy themes (terminal, bar, editor, btop...) gets its colors from this file.
+mode = "light"
+
+# The one spot of color: a deep "link" blue
+accent = "#1A4F8B"
+selection = "#DDD8CB"
+muted = "#8C8880"            # thin gray rules, comments, inactive things
+
+# Paper
+background = "#FBF9F4"         # paper white, faintly warm
+dark_background = "#F2EFE7"
+darker_background = "#E7E3D9"
+lighter_background = "#EEEBE2"
+
+# Ink
+foreground = "#111111"
+dark_foreground = "#66635D"    # bylines & captions
+light_foreground = "#333333"
+bright_foreground = "#000000"  # true black for emphasis
+
+# Terminal colors, kept as dark, desaturated printing inks
+red = "#A3231F"
+yellow = "#86650F"
+orange = "#9C4F1B"
+green = "#3D6A29"
+cyan = "#2A6B73"
+blue = "#1A4F8B"
+magenta = "#74386A"
+brown = "#5C3A1E"
+
+bright_red = "#C0392F"
+bright_yellow = "#A07B14"
+bright_green = "#4F8236"
+bright_cyan = "#35838C"
+bright_blue = "#2E66A8"
+bright_magenta = "#8E4A82"
+
+# Window borders: black ink rule for the focused window, gray for the rest
+hyprland_active_border = "rgb(111111)"
+hyprland_inactive_border = "rgba(8c8880aa)"
