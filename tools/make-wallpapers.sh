@@ -10,7 +10,9 @@
 #             fit:0.9 = whole image on paper, 90% of screen height (for statues on a backdrop)
 #   gravity:  which part of the image to keep (center, north, east, southwest...)
 #   x,y:      extra nudge of the crop in pixels
-#   backdrop: "keep"; "paper" flood-fills a dark museum backdrop to white; "ink" fills it to black
+#   backdrop: "keep"; "paper" flood-fills a dark museum backdrop to white; "ink" fills it to black;
+#             "trim" cuts a print's blank paper margin off first, so the crop is all picture
+#   (A crop never pads: if it would come up short of the screen, it zooms in to fill it.)
 #   gamma:    brightness; 1 = as is, 1.5 = lighter (for dark bronze or shadowy photos)
 # Usage: tools/make-wallpapers.sh [--dark] [name-filter]      (run from the theme root)
 set -e
@@ -43,6 +45,12 @@ grep -vE '^\s*(#|$)' "$LIST" | while IFS='|' read -r out src style px zoom gravi
     fill=(-fuzz 12% -fill $fc -draw "color 2,2 floodfill" -draw "color $((sw-3)),2 floodfill"
           -draw "color 2,$((sh-3)) floodfill" -draw "color $((sw-3)),$((sh-3)) floodfill")
   fi
+  if [[ $backdrop == trim ]]; then
+    # Find the picture inside the paper margin on a blurred copy (ignores paper grain), inset 1.5%.
+    read -r bw bh bx by < <(magick "tools/sources/$src" -colorspace gray -blur 0x4 -fuzz 14% -trim -format '%w %h %X %Y\n' info:)
+    bx=${bx#+} by=${by#+}; ix=$((bw * 15 / 1000)) iy=$((bh * 15 / 1000))
+    fill=(-crop "$((bw - 2*ix))x$((bh - 2*iy))+$((bx + ix))+$((by + iy))" +repage)
+  fi
   if [[ $zoom == fit:* ]]; then
     fh=$(awk "BEGIN{printf \"%d\", $H*${zoom#fit:}}")
     magick "tools/sources/$src" "${fill[@]}" -colorspace gray "${neg[@]}" -auto-level -gamma "$gamma" -resize "x$fh" "$TMP/s.png"
@@ -51,7 +59,8 @@ grep -vE '^\s*(#|$)' "$LIST" | while IFS='|' read -r out src style px zoom gravi
   else
     magick "tools/sources/$src" "${fill[@]}" -colorspace gray "${neg[@]}" -auto-level -gamma "$gamma" \
       -resize "${cw}x${ch}^" \
-      -gravity "$gravity" -crop "${W}x${H}${x}${y}" +repage -gravity center -extent "${W}x${H}" "$TMP/g.png"
+      -gravity "$gravity" -crop "${W}x${H}${x}${y}" +repage \
+      -resize "${W}x${H}^" -gravity center -extent "${W}x${H}" "$TMP/g.png"
   fi
 
   # 2. Print it.
