@@ -1,11 +1,13 @@
-# Broadsheet — an Omarchy theme that reads like a good newspaper.
-# Every app Omarchy themes (terminal, bar, editor, btop...) gets its colors from this file.
+# Broadsheet: an Omarchy theme that reads like a good newspaper.
+# Every app Omarchy themes (terminal, bar, editors, btop...) gets its colors from this file.
+# Every text color is drawn from a real printing/pigment ink and checked for contrast:
+# run tools/check-palette.py after editing (aim: 4.5+ for text, code colors ~6).
 mode = "light"
 
-# The one spot of color: a deep "link" blue
-accent = "#1A4F8B"
-selection = "#D5CEBE"
-muted = "#8E897F"            # thin gray rules, comments, inactive things
+# Accent: oxblood, the editorial "section color"
+accent = "#7E2B22"
+selection = "#D8CFBC"
+muted = "#78736A"            # thin rules, comments, inactive things
 
 # Paper
 background = "#EEEAE0"         # bone: soft, unbleached paper
@@ -15,27 +17,27 @@ lighter_background = "#E9E5DB"
 
 # Ink
 foreground = "#1C1B19"          # warm ink, softer than pure black
-dark_foreground = "#66635D"    # bylines & captions
+dark_foreground = "#5F5B54"    # bylines & captions
 light_foreground = "#3A3835"
 bright_foreground = "#000000"  # true black for emphasis
 
-# Terminal colors, kept as dark, desaturated printing inks
-red = "#A3231F"
-yellow = "#86650F"
-orange = "#9C4F1B"
-green = "#3D6A29"
-cyan = "#2A6B73"
-blue = "#1A4F8B"
-magenta = "#74386A"
-brown = "#5C3A1E"
+# Code & terminal colors: printing inks, darkened for paper
+red = "#A12645"        # crimson
+orange = "#A33814"     # vermilion
+yellow = "#7F540A"     # ochre
+green = "#3D5E28"      # moss
+cyan = "#1F615C"       # verdigris
+blue = "#2B4A70"       # prussian slate
+magenta = "#6E3462"    # plum
+brown = "#5A3E26"      # umber
 
-bright_red = "#C0392F"
-bright_yellow = "#A07B14"
-bright_green = "#4F8236"
-bright_cyan = "#35838C"
-bright_blue = "#2E66A8"
-bright_magenta = "#8E4A82"
+bright_red = "#BC2C50"
+bright_yellow = "#8B5C0B"
+bright_green = "#486F2F"
+bright_cyan = "#24706B"
+bright_blue = "#3C679C"
+bright_magenta = "#984888"
 
-# Window borders: the accent blue marks the focused window, a faint rule for the rest
-hyprland_active_border = "rgb(1A4F8B)"
-hyprland_inactive_border = "rgba(8e897f66)"
+# Window borders: oxblood hairline on the focused window, a faint rule for the rest
+hyprland_active_border = "rgb(7E2B22)"
+hyprland_inactive_border = "rgba(78736a55)"

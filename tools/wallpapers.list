@@ -1,0 +1,6 @@
+# out          | source                         | style     | px | zoom     | gravity   | x,y      | backdrop | gamma | caption
+1-antoninus    | antoninus-pius.jpg             | pixel     | 8  | fit:1.1  | southeast | 200,-90  | paper    | 1     | Fig. 1 — Antoninus Pius, Roman emperor, c. 140 A.D.
+2-constantine  | constantine.jpg                | halftone  | 5  | 1.0      | north     | 0,520    | keep     | 1.5   | Fig. 2 — Bronze colossus of Constantine, Capitoline Museums, Rome
+3-laocoon      | laocoon.jpg                    | grain     | 3  | 1.15     | center    | 0,-60    | keep     | 1     | Fig. 3 — Laocoön and His Sons, Vatican Museums
+4-hercules     | hercules-goltzius.jpg          | engraving | 1  | 1.0      | north     | 0,60     | keep     | 1     | Fig. 4 — Farnese Hercules, engraving by Hendrick Goltzius, 1592
+5-apollo       | apollo-belvedere-engraving.jpg | engraving | 1  | fit:1.0  | east      | 360,40   | keep     | 1     | Fig. 5 — Apollo Belvedere, engraving by Asher B. Durand, 1825
