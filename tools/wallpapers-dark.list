@@ -18,3 +18,6 @@
 # — Animals —
 12-cat            | cat.jpg              | halftone-neg   | 3  | 1.0      | center    | 0,0      | trim     | 1     | Fig. 12 — Cat galloping, Animal Locomotion, Eadweard Muybridge, 1887
 13-siphonophorae  | siphonophorae.jpg    | grain-neg      | 2  | 1.0      | north     | 0,300    | keep     | 1     | Fig. 13 — Siphonophorae, from Kunstformen der Natur, Ernst Haeckel, 1904
+# — Land —
+14-holy-cross     | holy-cross.jpg       | tintype        | 1  | 1.0      | center    | 0,0      | keep     | 0.8   | Fig. 14 — Mount of the Holy Cross, Colorado, photograph by W. H. Jackson
+16-canyon-de-chelly | canyon-de-chelly.jpg | tintype      | 1  | 1.0      | south     | 0,-20    | keep     | 0.75  | Fig. 16 — Cañon de Chelle, Arizona Territory, photograph by Timothy H. O’Sullivan, 1873

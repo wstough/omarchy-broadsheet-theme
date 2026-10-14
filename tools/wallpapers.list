@@ -23,3 +23,6 @@
 18-turkey         | turkey.jpg             | grain     | 2  | fit:1.05 | east      | 300,20   | keep     | 1.2   | Fig. 18 — Wild Turkey, J. J. Audubon, engraved by W. H. Lizars
 19-medusae        | medusae.jpg            | grain     | 2  | fit:1.05 | east      | 300,20   | keep     | 1.2   | Fig. 19 — Discomedusae, from Kunstformen der Natur, Ernst Haeckel
 20-haeckel        | haeckel.jpg            | grain     | 2  | 1.0      | center    | 0,0      | keep     | 1.3   | Fig. 20 — Actiniae, from Kunstformen der Natur, Ernst Haeckel, 1904
+# — Land —
+21-merced         | merced.jpg             | tintype   | 1  | 1.0      | center    | 0,0      | keep     | 1.1   | Fig. 21 — “On the Merced,” Yosemite, photograph by Carleton Watkins, 1861
+22-shoshone       | shoshone.jpg           | tintype   | 1  | 1.0      | center    | 0,60     | keep     | 0.8   | Fig. 22 — Shoshone Falls, Idaho, photograph by Timothy H. O’Sullivan, 1874

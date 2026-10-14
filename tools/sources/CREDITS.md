@@ -25,6 +25,8 @@ All from Wikimedia Commons, public domain or CC0. Wallpapers are dithered/re-ink
 | hare.jpg | Albrecht Dürer, Young Hare, 1502 (margins trimmed) | Albrecht Dürer - Hare, 1502 - Google Art Project.jpg | Public domain |
 | turkey.jpg | J. J. Audubon, Wild Turkey, Birds of America pl. 1, engraved by W. H. Lizars (margins trimmed) | The birds of America. (Livraison) 1, Plate I, Great American Cock Male ... btv1b53144013v.jpg | Public domain |
 | medusae.jpg | Ernst Haeckel, Discomedusae, Kunstformen der Natur (margins trimmed) | Discomedusae. - Scheibenquallen LCCN2014645035.jpg | Public domain |
+| merced.jpg | Carleton Watkins, "On the Merced," Yosemite, 1861 (stereograph, left frame) | Carleton Watkins (American - "'On the Merced' Yo Semite" - Google Art Project.jpg | Public domain |
+| shoshone.jpg | Timothy H. O'Sullivan, Shoshone Falls, Idaho, 1874 (NARA 524100, left frame) | SHOSHONE FALLS - NARA - 524100.jpg | Public domain |
 
 Commons pages: https://commons.wikimedia.org/wiki/File:<Commons file>
 
@@ -36,4 +38,6 @@ The "OMARCHY" logo wallpapers and lock-screen logo are Omarchy's own artwork (MI
 herschel.jpg, julia-jackson.jpg (Julia Margaret Cameron, 1867), nadar.jpg (Nadar self-portrait),
 dore-rail.jpg, dore-ludgate.jpg (Gustave Doré, London: A Pilgrimage, 1872), drawbridge.jpg (Piranesi, 1750),
 eclipse.jpg, saturn.jpg (E. L. Trouvelot), earthrise.jpg (NASA, Apollo 8), cat.jpg (Muybridge, cropped),
-siphonophorae.jpg (Haeckel). All public domain or CC0 on Wikimedia Commons.
+siphonophorae.jpg (Haeckel), holy-cross.jpg (W. H. Jackson, Mount of the Holy Cross, Rijksmuseum
+RP-F-2012-96-209, CC0, caption strip cropped), canyon-de-chelly.jpg (T. H. O'Sullivan, Wheeler survey 1873,
+NARA 519723, left frame). All public domain or CC0 on Wikimedia Commons.

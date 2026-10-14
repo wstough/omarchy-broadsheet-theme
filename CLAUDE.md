@@ -74,7 +74,14 @@ something (code/terminal), editorial typography. Light first; dark variant after
   default 2px). `tools/make-shell-toml.sh` regenerates each theme's shell.toml from Omarchy's
   output + 1px borders. RE-RUN IT after any colors.toml change (shipped shell.toml overrides
   generation). Corner radius already follows Hyprland rounding (Style.cornerRadius).
-- [ ] Bar polish continues (owner reviewing); real preview screenshots
+- [x] Tintype landscapes (owner request): new `tintype` style (soft dark vignette + fine grain).
+  Real tintype landscapes don't exist in PD archives; used wet-plate stereographs (one frame).
+  Light: Watkins Merced, O'Sullivan Shoshone. Dark: Jackson Holy Cross, O'Sullivan Cañon de Chelle.
+- Fonts (2026-10-13): owner wants a true newspaper READING face visible. Bar must stay monospace
+  (Omarchy shell). Menus/launcher/polkit/clipboard honor OMARCHY_MENU_FONT (set via hl.env in
+  ~/.config/hypr/looknfeel.lua; currently "Charis" as a live trial; restart shell to apply).
+  Candidates installed: Newsreader, Charis, Source Serif 4, Libre Caslon Text, Literata, Old Standard TT.
+- [ ] Owner to pick the reading face; bar polish; real preview screenshots
 - [ ] More statues / wallpapers
 - [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
   Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +

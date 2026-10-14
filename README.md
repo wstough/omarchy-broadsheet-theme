@@ -21,7 +21,7 @@ omarchy theme install https://github.com/wstough/omarchy-omapaper-theme
 | File | Purpose |
 |------|---------|
 | `colors.toml` | The palette. Omarchy generates terminal, bar, Hyprland borders, btop, Neovim, VS Code and more from it. |
-| `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): 20 pieces of art (people, architecture, sky, animals: Dürer, Rembrandt, Goltzius, Piranesi, Rutherfurd, Trouvelot, Muybridge, Audubon, Haeckel) re-printed as halftone, pixel, grain and engraving, plus Omarchy's own logo re-inked (light and dark). |
+| `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): 20 pieces of art (people, architecture, sky, animals: Dürer, Rembrandt, Goltzius, Piranesi, Rutherfurd, Trouvelot, Muybridge, Audubon, Haeckel, Watkins, O'Sullivan) re-printed as halftone, pixel, grain, engraving and tintype, plus Omarchy's own logo re-inked (light and dark). |
 | `chromium.theme` | Browser toolbar color (R,G,B). |
 | `icons.theme` | GTK icon set name. |
 | `unlock.png` | Logo on the lock screen (and boot screen via `omarchy plymouth set by theme omapaper`). |

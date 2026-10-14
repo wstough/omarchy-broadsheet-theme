@@ -3,7 +3,8 @@
 # OmaPaper Dark collection from tools/wallpapers-dark.list into ../omapaper-dark/backgrounds.
 # Each line: out | source | style | px | zoom | gravity | x,y | backdrop | gamma | caption
 #   style:    pixel (Bayer squares), halftone (round newspaper dots), grain (error diffusion),
-#             engraving (clean ink lines for prints/drawings); add -neg (e.g. engraving-neg)
+#             engraving (clean ink lines for prints/drawings), tintype (dark vignette + fine
+#             grain, for 19th-century wet-plate photographs); add -neg (e.g. engraving-neg)
 #             to print a negative: light lines on a dark page, like scratchboard
 #   px:       size of one printed dot/pixel; bigger = chunkier
 #   zoom:     1 = image just fills the screen; 1.6 = crop in closer;
@@ -70,6 +71,11 @@ grep -vE '^\s*(#|$)' "$LIST" | while IFS='|' read -r out src style px zoom gravi
     halftone)  magick "$TMP/g.png" -sigmoidal-contrast 5x50% "${CLEAN[@]}" -resize $((W*2/px))x$((H*2/px))! -white-threshold 94% \
                  -ordered-dither h8x8o -clamp -threshold 50% -filter point -resize ${W}x${H}! "$TMP/p.png" ;;
     grain)     magick "$TMP/g.png" -sigmoidal-contrast 3x50% "${CLEAN[@]}" -resize $((W/px))x$((H/px))! -white-threshold 92% \
+                 -dither FloydSteinberg -colors 2 -colorspace gray -auto-level -filter point -resize ${W}x${H}! "$TMP/p.png" ;;
+    tintype)   magick "$TMP/g.png" -sigmoidal-contrast 3x50% \
+                 \( -size $((W/10))x$((H/10)) xc:white -background black -vignette 0x$((H/30))+$((W/800))+$((H/600)) \
+                    -resize ${W}x${H}! \) \
+                 -compose multiply -composite -resize $((W/px))x$((H/px))! \
                  -dither FloydSteinberg -colors 2 -colorspace gray -auto-level -filter point -resize ${W}x${H}! "$TMP/p.png" ;;
     engraving) magick "$TMP/g.png" -level 30%,80% -blur 0x0.6 -threshold 55% "$TMP/p.png" ;;
   esac
