@@ -1,4 +1,4 @@
-# Broadsheet
+# OmaPaper
 
 An [Omarchy](https://omarchy.org) theme that reads like a good newspaper, with a little Apple calm:
 bone-colored paper, warm black ink, graphite rules. Color is saved for meaning: code and terminal
@@ -6,12 +6,12 @@ colors are clear printing inks (crimson, vermilion, ochre, bottle green, petrol,
 dark enough to read comfortably on paper (WCAG 4.5:1+; `tools/check-palette.py`, and
 `tools/palette-preview.py` for a visual side-by-side).
 
-![Broadsheet preview](preview.png)
+![OmaPaper preview](preview.png)
 
 ## Install
 
 ```bash
-omarchy theme install https://github.com/wstough/omarchy-broadsheet-theme
+omarchy theme install https://github.com/wstough/omarchy-omapaper-theme
 ```
 
 ## What's inside
@@ -19,12 +19,12 @@ omarchy theme install https://github.com/wstough/omarchy-broadsheet-theme
 | File | Purpose |
 |------|---------|
 | `colors.toml` | The palette. Omarchy generates terminal, bar, Hyprland borders, btop, Neovim, VS Code and more from it. |
-| `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): art and architecture (Piranesi, Dürer, Hokusai, Haeckel, Roman sculpture) re-printed as halftone, pixel, grain and engraving, plus three script logos. |
+| `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): 20 pieces of art (people, architecture, sky, animals: Dürer, Rembrandt, Goltzius, Piranesi, Rutherfurd, Trouvelot, Muybridge, Audubon, Haeckel) re-printed as halftone, pixel, grain and engraving, plus an "Omarchy" signature. |
 | `chromium.theme` | Browser toolbar color (R,G,B). |
 | `icons.theme` | GTK icon set name. |
 | `unlock.png` | Logo on the lock screen. |
 | `preview.png` | Thumbnail in the theme picker. |
-| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art), `make-script.sh` (script logos), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
+| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art), `make-signature.py` (signature), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
 
 ## Recommended window style and fonts
 

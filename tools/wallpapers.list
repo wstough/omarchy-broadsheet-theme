@@ -1,12 +1,25 @@
 # out             | source                 | style     | px | zoom     | gravity   | x,y      | backdrop | gamma | caption
-01-antoninus      | antoninus-pius.jpg     | pixel     | 4  | fit:1.1  | southeast | 200,-90  | paper    | 1     | Fig. 1 — Antoninus Pius, Roman emperor, c. 140 A.D.
-02-pantheon-dome  | pantheon-dome.jpg      | halftone  | 4  | 1.0      | center    | 0,0      | keep     | 1.2   | Fig. 2 — The dome of the Pantheon, Rome
-03-colosseum      | colosseum-piranesi.jpg | engraving | 1  | 1.12     | center    | 0,-30    | keep     | 1.7   | Fig. 3 — The Colosseum, etching by Giovanni Battista Piranesi
-04-great-wave     | great-wave.jpg         | pixel     | 3  | 1.06     | center    | 0,0      | keep     | 1.1   | Fig. 4 — Under the Wave off Kanagawa, Katsushika Hokusai
-05-rhinoceros     | rhinoceros.jpg         | engraving | 1  | 1.0      | south     | 0,-40    | keep     | 1     | Fig. 5 — The Rhinoceros, woodcut by Albrecht Dürer, 1515
-06-sounion        | sounion.jpg            | grain     | 2  | 1.0      | center    | 0,0      | keep     | 1.5   | Fig. 6 — Temple of Poseidon, Cape Sounion
-07-carceri        | carceri.jpg            | engraving | 1  | 1.1      | center    | 0,0      | keep     | 1.8   | Fig. 7 — Carceri d’invenzione, Plate XIV, Giovanni Battista Piranesi
-08-capital        | capital.jpg            | engraving | 1  | 1.05     | center    | 0,0      | keep     | 1     | Fig. 8 — Corinthian capital, Speculum Romanae Magnificentiae, 1537
-09-constantine    | constantine.jpg        | halftone  | 4  | 1.0      | north     | 0,520    | keep     | 1.5   | Fig. 9 — Bronze colossus of Constantine, Capitoline Museums, Rome
-11-haeckel        | haeckel.jpg            | grain     | 2  | 1.0      | center    | 0,0      | keep     | 1.3   | Fig. 11 — Actiniae, from Kunstformen der Natur, Ernst Haeckel, 1904
-10-pantheon       | pantheon-piranesi.jpg  | engraving | 1  | 1.05     | center    | 0,-20    | keep     | 1.8   | Fig. 10 — The Pantheon, etching by Giovanni Battista Piranesi
+# — People —
+01-knight         | knight.jpg             | engraving | 1  | 1.0      | north     | 0,420    | keep     | 1.4   | Fig. 1 — Knight, Death and the Devil, engraving by Albrecht Dürer, 1513
+02-hercules       | hercules.jpg           | engraving | 1  | 1.7      | north     | 120,40   | keep     | 1     | Fig. 2 — Farnese Hercules, engraving by Hendrick Goltzius, c. 1592
+03-rembrandt      | rembrandt.jpg          | engraving | 1  | 1.0      | north     | 0,330    | keep     | 1.3   | Fig. 3 — Self-Portrait, Frowning, etching by Rembrandt van Rijn, 1630
+04-jerome         | jerome.jpg             | engraving | 1  | 1.0      | north     | 0,900    | keep     | 1.4   | Fig. 4 — Saint Jerome in His Study, engraving by Albrecht Dürer, 1514
+05-antoninus      | antoninus-pius.jpg     | pixel     | 4  | fit:1.1  | southeast | 200,-90  | paper    | 1     | Fig. 5 — Antoninus Pius, Roman emperor, c. 140 A.D.
+06-constantine    | constantine.jpg        | halftone  | 4  | 1.0      | north     | 0,520    | keep     | 1.5   | Fig. 6 — Bronze colossus of Constantine, Capitoline Museums, Rome
+# — Architecture —
+07-pantheon       | pantheon-piranesi.jpg  | engraving | 1  | 1.05     | center    | 0,-20    | keep     | 1.8   | Fig. 7 — The Pantheon, etching by Giovanni Battista Piranesi
+08-pantheon-dome  | pantheon-dome.jpg      | halftone  | 4  | 1.0      | center    | 0,0      | keep     | 1.2   | Fig. 8 — The dome of the Pantheon, Rome
+09-colosseum      | colosseum-piranesi.jpg | engraving | 1  | 1.12     | center    | 0,-30    | keep     | 1.7   | Fig. 9 — The Colosseum, etching by Giovanni Battista Piranesi
+10-capital        | capital.jpg            | engraving | 1  | 1.05     | center    | 0,0      | keep     | 1     | Fig. 10 — Corinthian capital, Speculum Romanae Magnificentiae, 1537
+11-sounion        | sounion.jpg            | grain     | 2  | 1.0      | center    | 0,0      | keep     | 1.5   | Fig. 11 — Temple of Poseidon, Cape Sounion
+12-carceri        | carceri.jpg            | engraving | 1  | 1.1      | center    | 0,0      | keep     | 1.8   | Fig. 12 — Carceri d’invenzione, Plate XIV, Giovanni Battista Piranesi
+# — Sky —
+13-moon           | moon.jpg               | halftone  | 3  | 1.3      | center    | 0,0      | keep     | 1.1   | Fig. 13 — The full moon, photographed by Lewis M. Rutherfurd, 1871
+14-orion          | orion.jpg              | grain     | 2  | 1.15     | center    | 0,-60    | keep     | 1.2   | Fig. 14 — The Great Nebula in Orion, drawn by E. L. Trouvelot, 1875
+# — Animals —
+15-rhinoceros     | rhinoceros.jpg         | engraving | 1  | 1.0      | south     | 0,-40    | keep     | 1     | Fig. 15 — The Rhinoceros, woodcut by Albrecht Dürer, 1515
+16-muybridge      | muybridge.jpg          | halftone  | 3  | 1.08     | center    | 0,0      | keep     | 1.3   | Fig. 16 — Sallie Gardner running, photographs by Eadweard Muybridge, 1878
+17-hare           | hare.jpg               | grain     | 2  | fit:1.0  | east      | 300,0    | keep     | 1.4   | Fig. 17 — Young Hare, Albrecht Dürer, 1502
+18-turkey         | turkey.jpg             | grain     | 2  | fit:1.05 | east      | 300,20   | keep     | 1.2   | Fig. 18 — Wild Turkey, J. J. Audubon, engraved by W. H. Lizars
+19-medusae        | medusae.jpg            | grain     | 2  | fit:1.05 | east      | 300,20   | keep     | 1.2   | Fig. 19 — Discomedusae, from Kunstformen der Natur, Ernst Haeckel
+20-haeckel        | haeckel.jpg            | grain     | 2  | 1.0      | center    | 0,0      | keep     | 1.3   | Fig. 20 — Actiniae, from Kunstformen der Natur, Ernst Haeckel, 1904

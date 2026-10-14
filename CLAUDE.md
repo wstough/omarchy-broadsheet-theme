@@ -1,4 +1,4 @@
-# Broadsheet — Omarchy theme
+# OmaPaper — Omarchy theme
 
 Tracking issue: wstough/projects#5 (board: github.com/users/wstough/projects/1).
 Owner is new to Linux: explain theme concepts plainly while working.
@@ -10,12 +10,13 @@ artwork. Bone paper, warm black ink, graphite gray accent and rules, color only 
 something (code/terminal), editorial typography. Light first; dark variant after.
 
 ## How it's installed here
-- Lives at `~/.config/omarchy/themes/broadsheet/` and *is* this git repo.
-- Apply after edits: `omarchy theme set broadsheet`.
+- Lives at `~/.config/omarchy/themes/omapaper/` and *is* this git repo.
+- Apply after edits: `omarchy theme set omapaper`.
 - Excluded from the dotfiles backup (`~/.config/.gitignore`) since GitHub holds it.
 
 ## Decisions
-- Name **Broadsheet**; repo `omarchy-broadsheet-theme` (install strips `omarchy-`/`-theme`).
+- Name **OmaPaper** (renamed from Broadsheet 2026-10-13 at owner's request); slug `omapaper` shows
+  as "Omapaper" in Omarchy (it title-cases lowercase slugs). Repo `omarchy-omapaper-theme`.
 - Base: stock `flexoki-light` (ink on paper).
 - **Everything goes through `colors.toml`.** Themes installed via `omarchy theme install`
   have `*.lua`, terminal configs and `vscode.json` dropped (they can run code) and
@@ -37,15 +38,18 @@ something (code/terminal), editorial typography. Light first; dark variant after
 - Wallpapers = a *collection*: art & architecture re-printed in ink on bone, filling the screen,
   varied print textures (pixel / halftone / grain / engraving), shared "Fig. N" caption plate.
   Built by `tools/make-wallpapers.sh` from `tools/wallpapers.list`. Owner feedback: smaller dots
-  are better (px 3-4); NO nudes ("too nude" -> dropped Laocoön, Hercules, Apollo); not only
-  statues (columns, architecture, prints welcome). Piranesi etchings need gamma ~1.7-1.8.
-  Logo wallpapers: owner wants *flowy* script like Fender/Coca-Cola, not blackletter/headline
-  (`tools/make-script.sh`: Yellowtail + swash, Spencerian Pinyon Script on ink, Mr Dafoe).
+  are better (px 3-4); people welcome but NO nudity (Goltzius Hercules kept, cropped to head and
+  shoulders: owner loved its etching); variety wanted: architecture, astronomy, animals.
+  Great Wave removed ("doesn't fit"). Piranesi etchings need gamma ~1.7-1.8; trim mount
+  margins from drawings shown "fit" on paper.
+  Logo wallpaper history: blackletter masthead / headline cover / three scripts all rejected.
+  Current: `tools/make-signature.py` — "Omarchy" in Great Vibes with a hand-drawn y tail that
+  dips, loops (teardrop) and underlines the word (owner's design). Light + ink versions.
   Sources must be CC0/public domain; verify captions against museum metadata; credit in
   `tools/sources/CREDITS.md`. Wikimedia rate-limits: send a User-Agent, pause between downloads.
 - Lock screen `unlock.png` = blackletter "Omarchy" in ink.
 - Fonts (owner's machine, not shippable in a theme): mono BlexMono Nerd Font (IBM Plex Mono),
-  sans Libre Franklin, serif Newsreader (via ~/.config/fontconfig/conf.d/60-broadsheet.conf;
+  sans Libre Franklin, serif Newsreader (via ~/.config/fontconfig/conf.d/60-omapaper.conf;
   Omarchy's /etc/fonts/conf.d/50-omarchy.conf *assigns* generics, so use prepend_first matches),
   GTK font via gsettings. NYT's fonts are proprietary; use free cousins only.
 ## Progress
@@ -54,14 +58,16 @@ something (code/terminal), editorial typography. Light first; dark variant after
 - [x] v3: ink palette (oxblood accent), directional shadows, fonts, 5 art + 2 type wallpapers
 - [x] v4: Claude Code switched to custom:omarchy (it was on built-in dark = pastel colors on paper),
   "Clear ink" palette, graphite accent, opacity 0.995/0.985, 11 art + 3 script wallpapers
-- [ ] Owner to pick palette A (applied) vs B; react to fonts, shadow preset, wallpapers
+- [x] Palette A ("Clear ink") chosen.
+- [x] v5: renamed OmaPaper; 20 art wallpapers (people/architecture/sky/animals); signature logo
+- [ ] Owner to react to v5 wallpapers + signature; pick shadow preset; terminal font 9 vs 10
 - [ ] Display: 13.3" 1920x1080 (168 DPI) at 1.25x = 1536x864 logical, like a 13" MacBook. Foot
   font size=9 (Plex Mono runs small; 10 is the likely sweet spot), bar base-size 12.
-- [ ] Dark variant (`broadsheet-dark`?) once light is dialed in; needs a dark mode in make-wallpapers.sh
+- [ ] Dark variant (`omapaper-dark`?) once light is dialed in; needs a dark mode in make-wallpapers.sh
   (ink paper, bone dots); Aelius Verus source is ready
 - [ ] More statues / wallpapers
 - [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
-  Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/broadsheet), IBM Plex +
+  Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +
   BlexMono Nerd, Inter, Source Serif 4, Nerd symbols fallback (pacman).
 - [ ] Optional `shell.toml` (bar typography/rules)
 - [ ] Check browser, Neovim, VS Code, btop

@@ -1,4 +1,4 @@
-# Broadsheet: an Omarchy theme that reads like a good newspaper.
+# OmaPaper: an Omarchy theme that reads like a good newspaper.
 # Every app Omarchy themes (terminal, bar, editors, btop...) gets its colors from this file.
 # Every text color is drawn from a real printing/pigment ink and checked for contrast:
 # run tools/check-palette.py after editing (aim: 4.5+ for text, code colors ~6).

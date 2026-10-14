@@ -1,5 +1,5 @@
 #!/bin/bash
-# Builds the Broadsheet wallpaper collection from tools/wallpapers.list.
+# Builds the OmaPaper wallpaper collection from tools/wallpapers.list.
 # Each line: out | source | style | px | zoom | gravity | x,y | backdrop | gamma | caption
 #   style:    pixel (Bayer squares), halftone (round newspaper dots), grain (error diffusion),
 #             engraving (clean ink lines for prints/drawings)

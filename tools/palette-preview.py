@@ -28,7 +28,7 @@ def panel(label, c):
         f'{s("blue", "print")}({s("green", "f" + chr(34) + "Today: ")}{{{s("blue", "count_headlines")}(today)}}{s("green", chr(34))}, {s("orange", "True")})',
     ])
     term = '\n'.join([
-        f'{s("green", "wts@omarchy")} {s("blue", "~/projects/broadsheet")} {s("magenta", "main")} {s("muted", "❯")} git status',
+        f'{s("green", "wts@omarchy")} {s("blue", "~/projects/omapaper")} {s("magenta", "main")} {s("muted", "❯")} git status',
         f'On branch main',
         f'  {s("green", "modified:   colors.toml")}',
         f'  {s("red", "deleted:    backgrounds/old.png")}',
@@ -47,7 +47,7 @@ def panel(label, c):
 
 out, specs = sys.argv[1], sys.argv[2:]
 panels = ''.join(panel(l, tomllib.load(open(p, 'rb'))) for l, p in (x.split('=', 1) for x in specs))
-open(out, 'w').write(f'''<!doctype html><meta charset="utf-8"><title>Broadsheet palettes</title>
+open(out, 'w').write(f'''<!doctype html><meta charset="utf-8"><title>OmaPaper palettes</title>
 <style>
 body{{margin:0;font-family:"Libre Franklin",sans-serif;background:#d9d4c8;display:flex;gap:2px;min-height:100vh}}
 section{{flex:1;padding:28px 26px;min-width:0}} h2{{font:600 15px "Libre Franklin";letter-spacing:.12em;text-transform:uppercase;margin:0 0 18px}}
