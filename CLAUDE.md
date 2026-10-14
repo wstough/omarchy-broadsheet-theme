@@ -6,8 +6,8 @@ Owner is new to Linux: explain theme concepts plainly while working.
 ## Goal
 Desktop that feels like a great newspaper, with Apple-like calm and polish
 (added 2026-10-13: beautiful, intuitive). NYT-*inspired*, never NYT's fonts, logo or
-artwork. Paper-white/slight-cream background, true-black ink, almost no color except one
-deep-blue accent, thin gray rules, editorial typography.
+artwork. Bone paper, warm black ink, graphite gray accent and rules, color only where it means
+something (code/terminal), editorial typography. Light first; dark variant after.
 
 ## How it's installed here
 - Lives at `~/.config/omarchy/themes/broadsheet/` and *is* this git repo.
@@ -22,21 +22,25 @@ deep-blue accent, thin gray rules, editorial typography.
   regenerated from `colors.toml`. So no `neovim.lua`/`vscode.json`; Neovim uses the
   generated aether palette.
 - Palette: bone paper `#EEEAE0` (v1 `#FBF9F4` was "too white, aggressive"), warm ink `#1C1B19`,
-  true black for emphasis. v3: owner felt blue didn't fit -> accent **oxblood `#7E2B22`**, and a
-  full "printing ink" set for code colors. Owner found green etc. hard to read: rule is every text
+  true black for emphasis. Accent history: blue (v2, "doesn't fit") -> oxblood (v3, "don't love")
+  -> **graphite gray `#55524C`** (v4, owner asked for gray). v4 code colors = "Clear ink"
+  (crimson/vermilion/ochre/bottle green/petrol/cobalt/violet): v3's muted inks passed contrast but
+  owner said blue/purple didn't stand out and green looked bad. Compare candidates visually with
+  `tools/palette-preview.py out.html "A=a.toml" "B=b.toml"` and open it in the browser. Owner found green etc. hard to read: rule is every text
   color >= 4.5:1 on paper (code colors ~5.5-6) and hue pairs >= 30 apart in Lab;
   `tools/check-palette.py` enforces both. Comments (`muted`) deliberately ~3.9.
   ANSI colors are dark, desaturated "printing inks" so terminals stay legible.
-- Borders: focused window = oxblood hairline, others faint gray. Owner likes this shape. Shape (1px border, rounding 10, directional shadow lit from above: offset -5,9,
+- Borders: focused window = graphite hairline, unfocused = lighter gray `#BFB9AC` (owner asked). Owner likes this shape. Shape (1px border, rounding 10, directional shadow lit from above: offset -5,9,
   deeper on focused window) lives in the owner's `~/.config/hypr/looknfeel.lua` (themes can't set it); README recommends it.
-- `unlock.png` = Omarchy logo recolored to ink. `icons.theme` = `Yaru` (neutral).
+- `icons.theme` = `Yaru` (neutral).
 - Inspirations: newspapers (NYT), Apple (calm, intuitive), magazine covers (Rolling Stone).
-- Wallpapers = a *collection*: classical art re-printed in ink on bone, filling the screen,
-  each a different print texture (pixel / halftone / grain / engraving), shared "Fig. N" caption
-  plate. Built by `tools/make-wallpapers.sh` from `tools/wallpapers.list` (one line per image:
-  crop, texture, dot size, brightness). Owner wanted bigger pixels and fuller frames.
-  Type covers (`tools/make-type.sh`): blackletter masthead + Abril Fatface "omarchy." cover.
-  Owner disliked the first masthead + slogan; wants bold, designed typography.
+- Wallpapers = a *collection*: art & architecture re-printed in ink on bone, filling the screen,
+  varied print textures (pixel / halftone / grain / engraving), shared "Fig. N" caption plate.
+  Built by `tools/make-wallpapers.sh` from `tools/wallpapers.list`. Owner feedback: smaller dots
+  are better (px 3-4); NO nudes ("too nude" -> dropped Laocoön, Hercules, Apollo); not only
+  statues (columns, architecture, prints welcome). Piranesi etchings need gamma ~1.7-1.8.
+  Logo wallpapers: owner wants *flowy* script like Fender/Coca-Cola, not blackletter/headline
+  (`tools/make-script.sh`: Yellowtail + swash, Spencerian Pinyon Script on ink, Mr Dafoe).
   Sources must be CC0/public domain; verify captions against museum metadata; credit in
   `tools/sources/CREDITS.md`. Wikimedia rate-limits: send a User-Agent, pause between downloads.
 - Lock screen `unlock.png` = blackletter "Omarchy" in ink.
@@ -48,7 +52,11 @@ deep-blue accent, thin gray rules, editorial typography.
 - [x] v1: colors, masthead wallpaper, lock logo, applied on desktop (2026-10-13)
 - [x] v2: bone palette, blue hairline borders, rounded corners/shadow, statue + wordmark wallpapers
 - [x] v3: ink palette (oxblood accent), directional shadows, fonts, 5 art + 2 type wallpapers
-- [ ] Owner to react to v3 (fonts especially; they hadn't looked at the specimen)
+- [x] v4: Claude Code switched to custom:omarchy (it was on built-in dark = pastel colors on paper),
+  "Clear ink" palette, graphite accent, opacity 0.995/0.985, 11 art + 3 script wallpapers
+- [ ] Owner to pick palette A (applied) vs B; react to fonts, shadow preset, wallpapers
+- [ ] Display: 13.3" 1920x1080 (168 DPI) at 1.25x = 1536x864 logical, like a 13" MacBook. Foot
+  font size=9 (Plex Mono runs small; 10 is the likely sweet spot), bar base-size 12.
 - [ ] Dark variant (`broadsheet-dark`?) once light is dialed in; needs a dark mode in make-wallpapers.sh
   (ink paper, bone dots); Aelius Verus source is ready
 - [ ] More statues / wallpapers

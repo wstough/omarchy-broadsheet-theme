@@ -4,9 +4,9 @@
 # run tools/check-palette.py after editing (aim: 4.5+ for text, code colors ~6).
 mode = "light"
 
-# Accent: oxblood, the editorial "section color"
-accent = "#7E2B22"
-selection = "#D8CFBC"
+# Accent: graphite, like a pencil rule. Color is saved for meaning (errors, code).
+accent = "#55524C"
+selection = "#D8D2C4"
 muted = "#78736A"            # thin rules, comments, inactive things
 
 # Paper
@@ -21,23 +21,23 @@ dark_foreground = "#5F5B54"    # bylines & captions
 light_foreground = "#3A3835"
 bright_foreground = "#000000"  # true black for emphasis
 
-# Code & terminal colors: printing inks, darkened for paper
-red = "#A12645"        # crimson
-orange = "#A33814"     # vermilion
-yellow = "#7F540A"     # ochre
-green = "#3D5E28"      # moss
-cyan = "#1F615C"       # verdigris
-blue = "#2B4A70"       # prussian slate
-magenta = "#6E3462"    # plum
+# Code & terminal colors: clear printing inks, dark enough for paper (v4 "Clear ink")
+red = "#B0283A"        # crimson
+orange = "#A8430F"     # vermilion
+yellow = "#865900"     # ochre
+green = "#22703F"      # bottle green
+cyan = "#006876"       # petrol
+blue = "#1F55B0"       # cobalt
+magenta = "#8B2C8F"    # violet
 brown = "#5A3E26"      # umber
 
-bright_red = "#BC2C50"
-bright_yellow = "#8B5C0B"
-bright_green = "#486F2F"
-bright_cyan = "#24706B"
-bright_blue = "#3C679C"
-bright_magenta = "#984888"
+bright_red = "#C42C41"
+bright_yellow = "#8E5E00"
+bright_green = "#247743"
+bright_cyan = "#007383"
+bright_blue = "#2464CE"
+bright_magenta = "#A835AD"
 
-# Window borders: oxblood hairline on the focused window, a faint rule for the rest
-hyprland_active_border = "rgb(7E2B22)"
-hyprland_inactive_border = "rgba(78736a55)"
+# Window borders: graphite hairline on the focused window, a lighter gray rule for the rest
+hyprland_active_border = "rgb(55524C)"
+hyprland_inactive_border = "rgb(BFB9AC)"
