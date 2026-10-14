@@ -24,9 +24,10 @@ omarchy theme install https://github.com/wstough/omarchy-omapaper-theme
 | `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): 20 pieces of art (people, architecture, sky, animals: Dürer, Rembrandt, Goltzius, Piranesi, Rutherfurd, Trouvelot, Muybridge, Audubon, Haeckel) re-printed as halftone, pixel, grain and engraving, plus Omarchy's own logo re-inked (light and dark). |
 | `chromium.theme` | Browser toolbar color (R,G,B). |
 | `icons.theme` | GTK icon set name. |
-| `unlock.png` | Logo on the lock screen. |
+| `unlock.png` | Logo on the lock screen (and boot screen via `omarchy plymouth set by theme omapaper`). |
+| `shell.toml` | Bar, popups, notifications, launcher and lock-screen styling, with 1px borders to match the windows. |
 | `preview.png` | Thumbnail in the theme picker. |
-| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art; `--dark` builds OmaPaper Dark from `wallpapers-dark.list`), `shadow-picker.sh` (pop-up shadow chooser), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
+| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art; `--dark` builds OmaPaper Dark from `wallpapers-dark.list`), `shadow-picker.sh` (pop-up shadow chooser), `make-shell-toml.sh`, `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
 
 ## Recommended window style and fonts
 

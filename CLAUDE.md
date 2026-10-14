@@ -69,11 +69,15 @@ something (code/terminal), editorial typography. Light first; dark variant after
 - [x] Dark variant v1: separate repo omarchy-omapaper-dark-theme at ../omapaper-dark (see its CLAUDE.md).
   `tools/make-wallpapers.sh --dark` builds it from `tools/wallpapers-dark.list` (+ `-neg` styles,
   `ink` backdrop). Owner rule: no artworks shared with the light set except the logo.
-- [ ] Owner to review dark; then shell.toml polish for both; real preview screenshots
+- [x] Wallpapers never show blank paper edges (no-pad crops + `trim` backdrop for prints).
+- [x] shell.toml: owner noticed bar popups/notifications had heavier borders than windows (Omarchy
+  default 2px). `tools/make-shell-toml.sh` regenerates each theme's shell.toml from Omarchy's
+  output + 1px borders. RE-RUN IT after any colors.toml change (shipped shell.toml overrides
+  generation). Corner radius already follows Hyprland rounding (Style.cornerRadius).
+- [ ] Bar polish continues (owner reviewing); real preview screenshots
 - [ ] More statues / wallpapers
 - [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
   Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +
   BlexMono Nerd, Inter, Source Serif 4, Nerd symbols fallback (pacman).
-- [ ] Optional `shell.toml` (bar typography/rules)
 - [ ] Check browser, Neovim, VS Code, btop
 - [ ] Clean preview.png screenshot; announce for other Omarchy users
