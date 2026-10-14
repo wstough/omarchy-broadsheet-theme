@@ -6,7 +6,9 @@ colors are clear printing inks (crimson, vermilion, ochre, bottle green, petrol,
 dark enough to read comfortably on paper (WCAG 4.5:1+; `tools/check-palette.py`, and
 `tools/palette-preview.py` for a visual side-by-side).
 
-![OmaPaper preview](preview.png)
+![OmaPaper with windows](preview.png)
+
+![OmaPaper desktop](screenshots/wallpaper.png)
 
 There's a night edition too: [OmaPaper Dark](https://github.com/wstough/omarchy-omapaper-dark-theme).
 

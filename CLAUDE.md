@@ -87,7 +87,10 @@ something (code/terminal), editorial typography. Light first; dark variant after
 - [x] Lock card: size is hard-coded in Omarchy (381x67); theme can only style it. Now 35% opaque,
   1px border (make-shell-toml.sh). Shrinking it = cloning omarchy.lock -> loses security updates;
   advised against, owner's call.
-- [ ] Real preview screenshots without personal info (plan: demo workspace)
+- [x] Preview screenshots (2026-10-13): staged on empty workspace 9 with DND on; windows show only
+  theme-repo content (nvim check-palette.py, git log, ink strip). Owner asked to hide the bar's
+  screen-time widget (agx.screen-time, ~x1612-1704 at 1920x1080): painted over with bar color.
+  preview.png = with windows; screenshots/wallpaper.png = desktop only. Same for the dark repo.
 - [ ] More statues / wallpapers
 - [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
   Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +
