@@ -92,8 +92,8 @@ something (code/terminal), editorial typography. Light first; dark variant after
   screen-time widget (agx.screen-time, ~x1612-1704 at 1920x1080): painted over with bar color.
   preview.png = with windows; screenshots/wallpaper.png = desktop only. Same for the dark repo.
 - [ ] More statues / wallpapers
-- [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
-  Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +
-  BlexMono Nerd, Inter, Source Serif 4, Nerd symbols fallback (pacman).
+- [x] Fonts kept (unused trial fonts removed 2026-10-13): Libre Franklin + Newsreader in
+  ~/.local/share/fonts/omapaper (Newsreader = wallpaper captions), BlexMono Nerd, Source Serif 4,
+  Nerd symbols fallback (pacman). ttf-ibm-plex stays (sddm/webengine depend on it).
 - [ ] Check browser, Neovim, VS Code, btop
 - [ ] Clean preview.png screenshot; announce for other Omarchy users
