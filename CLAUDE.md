@@ -79,9 +79,15 @@ something (code/terminal), editorial typography. Light first; dark variant after
   Light: Watkins Merced, O'Sullivan Shoshone. Dark: Jackson Holy Cross, O'Sullivan Cañon de Chelle.
 - Fonts (2026-10-13): owner wants a true newspaper READING face visible. Bar must stay monospace
   (Omarchy shell). Menus/launcher/polkit/clipboard honor OMARCHY_MENU_FONT (set via hl.env in
-  ~/.config/hypr/looknfeel.lua; currently "Charis" as a live trial; restart shell to apply).
-  Candidates installed: Newsreader, Charis, Source Serif 4, Libre Caslon Text, Literata, Old Standard TT.
-- [ ] Owner to pick the reading face; bar polish; real preview screenshots
+  ~/.config/hypr/looknfeel.lua; restart shell to apply). Owner compared six faces and CHOSE
+  **Source Serif 4**: menu font + fontconfig serif + GTK document font. Bar approved as-is.
+- [x] Screensaver: Omarchy runs `ttfx --random-effect` (rainbow). `tools/ttfx-omapaper` installed
+  as /usr/local/bin/ttfx (shadows /usr/bin/ttfx on PATH) picks calm effects in the active theme's
+  colors on its paper. Owner's machine has it installed.
+- [x] Lock card: size is hard-coded in Omarchy (381x67); theme can only style it. Now 35% opaque,
+  1px border (make-shell-toml.sh). Shrinking it = cloning omarchy.lock -> loses security updates;
+  advised against, owner's call.
+- [ ] Real preview screenshots without personal info (plan: demo workspace)
 - [ ] More statues / wallpapers
 - [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
   Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +

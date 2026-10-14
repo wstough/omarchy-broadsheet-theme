@@ -20,6 +20,9 @@ def add(section, line):
 add("hyprland", "active-border-width = 1")
 for sec in ["popups", "tooltip", "notifications", "launcher", "menu", "polkit", "lock"]:
     add(sec, "border-width = 1")
+# Lock screen: a light, translucent card (a hairline frame over the blurred wallpaper) instead of
+# Omarchy's 80%-opaque slab. The card's size is fixed by Omarchy and can't be set from a theme.
+s = re.sub(r"(^\[lock\]\n(?:(?!^\[).*\n)*?)background-alpha\s*=\s*[0-9.]+", r"\1background-alpha = 0.35", s, count=1, flags=re.M)
 open(out, "w").write(s)
 PY
   echo "wrote $THEMES/$t/shell.toml"

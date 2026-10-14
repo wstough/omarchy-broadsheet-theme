@@ -52,7 +52,13 @@ so it uses these inks instead of its own dark palette.
 Pick a shadow with a live pop-up: `tools/shadow-picker.sh` (or `tools/try-shadow.sh airy|soft|crisp|paper|off`).
 
 Fonts: `omarchy font set "BlexMono Nerd Font"` (IBM Plex Mono; `pacman -S ttf-ibmplex-mono-nerd`),
-with Libre Franklin for apps and Newsreader for serif text.
+Libre Franklin for apps, and **Source Serif 4** (`pacman -S adobe-source-serif-fonts`) as the
+newspaper reading face: set it as the default serif, and for the launcher and menus add
+`hl.env("OMARCHY_MENU_FONT", "Source Serif 4")` to `~/.config/hypr/looknfeel.lua`.
+
+Screensaver in theme colors (instead of rainbow effects):
+`sudo install -m755 tools/ttfx-omapaper /usr/local/bin/ttfx` (remove that file to undo). It follows
+whichever theme is active.
 
 ## Credits
 

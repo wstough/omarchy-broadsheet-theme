@@ -1,0 +1,35 @@
+#!/bin/bash
+# OmaPaper screensaver colors. Omarchy's screensaver runs `ttfx ... --random-effect`, which picks
+# from every effect with rainbow defaults. Installed as /usr/local/bin/ttfx (found before
+# /usr/bin/ttfx), this wrapper swaps that for a curated set of calm effects drawn in the current
+# theme's own colors, on the theme's paper. Any other ttfx call passes straight through.
+# Install:   sudo install -m755 tools/ttfx-omapaper /usr/local/bin/ttfx
+# Uninstall: sudo rm /usr/local/bin/ttfx
+REAL=/usr/bin/ttfx
+[[ " $* " == *" --random-effect "* ]] || exec "$REAL" "$@"
+
+colors=~/.local/state/omarchy/current/theme/colors.toml
+c() { sed -nE "s/^$1 *= *\"#?([0-9A-Fa-f]{6})\".*/\1/p" "$colors" | head -1; }
+BG=$(c background) FG=$(c foreground) DIM=$(c dark_foreground) MUT=$(c muted) ACC=$(c accent) HI=$(c bright_foreground)
+: "${BG:=000000}" "${FG:=ffffff}" "${DIM:=$FG}" "${MUT:=$DIM}" "${ACC:=$FG}" "${HI:=$FG}"
+
+FINAL=(--final-gradient-stops "$DIM" "$FG")
+declare -A EFFECT=(
+  [print]=""            [wipe]=""          [sweep]=""            [slide]=""
+  [middleout]="--starting-color $MUT"      [expand]=""           [highlight]=""
+  [spotlights]=""       [scattered]=""     [randomsequence]=""   [slice]=""
+  [pour]="--starting-color $MUT"           [orbittingvolley]=""  [crumble]=""
+  [beams]="--beam-gradient-stops $HI $ACC $DIM"
+  [decrypt]="--ciphertext-colors $MUT $DIM $ACC"
+  [waves]="--wave-gradient-stops $MUT $ACC $FG"
+  [rain]="--rain-colors $MUT $DIM $ACC"
+  [smoke]="--smoke-gradient-stops $MUT $DIM --starting-color $MUT"
+  [overflow]="--overflow-gradient-stops $MUT $DIM $ACC"
+  [laseretch]="--laser-gradient-stops $HI $ACC --spark-gradient-stops $ACC $MUT --cool-gradient-stops $DIM $FG"
+)
+names=("${!EFFECT[@]}"); effect=${names[RANDOM % ${#names[@]}]}
+
+globals=(); for a in "$@"; do [[ $a == --random-effect ]] || globals+=("$a"); done
+printf '\033]11;#%s\007' "$BG" > /dev/tty 2>/dev/null   # paint the screen in the theme's paper
+# shellcheck disable=SC2086
+exec "$REAL" "${globals[@]}" --terminal-background-color "$BG" "$effect" "${FINAL[@]}" ${EFFECT[$effect]}
