@@ -47,7 +47,7 @@ something (code/terminal), editorial typography. Light first; dark variant after
   dips, loops (teardrop) and underlines the word (owner's design). Light + ink versions.
   Sources must be CC0/public domain; verify captions against museum metadata; credit in
   `tools/sources/CREDITS.md`. Wikimedia rate-limits: send a User-Agent, pause between downloads.
-- Lock screen `unlock.png` = blackletter "Omarchy" in ink.
+- Lock screen `unlock.png` = "Omarchy" in Great Vibes, ink (matches the signature).
 - Fonts (owner's machine, not shippable in a theme): mono BlexMono Nerd Font (IBM Plex Mono),
   sans Libre Franklin, serif Newsreader (via ~/.config/fontconfig/conf.d/60-omapaper.conf;
   Omarchy's /etc/fonts/conf.d/50-omarchy.conf *assigns* generics, so use prepend_first matches),
