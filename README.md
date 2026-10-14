@@ -38,8 +38,8 @@ hl.config({
   general = { border_size = 1 },
   decoration = {
     rounding = 10,
-    shadow = { enabled = true, range = 28, render_power = 2, offset = { -5, 9 },
-               color = "rgba(1c1b1933)", color_inactive = "rgba(1c1b1918)" },
+    shadow = { enabled = true, range = 12, render_power = 3, offset = { -3, 5 },
+               color = "rgba(1c1b1940)", color_inactive = "rgba(1c1b1920)" },
   },
 })
 o.window({ tag = "default-opacity" }, { opacity = "0.995 0.985" })  -- calmer than the default

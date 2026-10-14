@@ -31,8 +31,8 @@ something (code/terminal), editorial typography. Light first; dark variant after
   color >= 4.5:1 on paper (code colors ~5.5-6) and hue pairs >= 30 apart in Lab;
   `tools/check-palette.py` enforces both. Comments (`muted`) deliberately ~3.9.
   ANSI colors are dark, desaturated "printing inks" so terminals stay legible.
-- Borders: focused window = graphite hairline, unfocused = lighter gray `#BFB9AC` (owner asked). Owner likes this shape. Shape (1px border, rounding 10, directional shadow lit from above: offset -5,9,
-  deeper on focused window) lives in the owner's `~/.config/hypr/looknfeel.lua` (themes can't set it); README recommends it.
+- Borders: focused window = graphite hairline, unfocused = lighter gray `#BFB9AC` (owner asked). Owner likes this shape. Shape (1px border, rounding 10, directional shadow lit from above, owner picked
+  the "crisp" preset: range 12, power 3, offset -3,5; deeper on focused window) lives in the owner's `~/.config/hypr/looknfeel.lua` (themes can't set it); README recommends it.
 - `icons.theme` = `Yaru` (neutral).
 - Inspirations: newspapers (NYT), Apple (calm, intuitive), magazine covers (Rolling Stone).
 - Wallpapers = a *collection*: art & architecture re-printed in ink on bone, filling the screen,
