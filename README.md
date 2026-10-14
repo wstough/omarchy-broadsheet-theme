@@ -19,12 +19,12 @@ omarchy theme install https://github.com/wstough/omarchy-omapaper-theme
 | File | Purpose |
 |------|---------|
 | `colors.toml` | The palette. Omarchy generates terminal, bar, Hyprland borders, btop, Neovim, VS Code and more from it. |
-| `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): 20 pieces of art (people, architecture, sky, animals: Dürer, Rembrandt, Goltzius, Piranesi, Rutherfurd, Trouvelot, Muybridge, Audubon, Haeckel) re-printed as halftone, pixel, grain and engraving, plus an "Omarchy" signature. |
+| `backgrounds/` | Wallpapers (cycle with `omarchy theme bg next`): 20 pieces of art (people, architecture, sky, animals: Dürer, Rembrandt, Goltzius, Piranesi, Rutherfurd, Trouvelot, Muybridge, Audubon, Haeckel) re-printed as halftone, pixel, grain and engraving, plus Omarchy's own logo re-inked (light and dark). |
 | `chromium.theme` | Browser toolbar color (R,G,B). |
 | `icons.theme` | GTK icon set name. |
 | `unlock.png` | Logo on the lock screen. |
 | `preview.png` | Thumbnail in the theme picker. |
-| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art), `make-signature.py` (signature), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
+| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art), `shadow-picker.sh` (pop-up shadow chooser), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
 
 ## Recommended window style and fonts
 
@@ -46,7 +46,7 @@ o.window({ tag = "default-opacity" }, { opacity = "0.995 0.985" })  -- calmer th
 Claude Code: run `/theme` and pick the custom Omarchy theme (or `omarchy-theme-set-claude --activate`)
 so it uses these inks instead of its own dark palette.
 
-Try other shadows live with `tools/try-shadow.sh airy|soft|crisp|paper|off`.
+Pick a shadow with a live pop-up: `tools/shadow-picker.sh` (or `tools/try-shadow.sh airy|soft|crisp|paper|off`).
 
 Fonts: `omarchy font set "BlexMono Nerd Font"` (IBM Plex Mono; `pacman -S ttf-ibmplex-mono-nerd`),
 with Libre Franklin for apps and Newsreader for serif text.

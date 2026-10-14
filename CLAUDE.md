@@ -43,11 +43,13 @@ something (code/terminal), editorial typography. Light first; dark variant after
   Great Wave removed ("doesn't fit"). Piranesi etchings need gamma ~1.7-1.8; trim mount
   margins from drawings shown "fit" on paper.
   Logo wallpaper history: blackletter masthead / headline cover / three scripts all rejected.
-  Current: `tools/make-signature.py` — "Omarchy" in Great Vibes with a hand-drawn y tail that
-  dips, loops (teardrop) and underlines the word (owner's design). Light + ink versions.
+  Signature script (Great Vibes + hand-drawn looping y tail) also rejected ("isn't working").
+  Final: Omarchy's ORIGINAL pixel logo re-inked (21-omarchy light, 22-omarchy-ink), straight
+  from /usr/share/omarchy/themes/flexoki-light/backgrounds/2-omarchy.png. Don't redesign it.
+  Caption plates: small (22pt) and lower-RIGHT (owner request).
   Sources must be CC0/public domain; verify captions against museum metadata; credit in
   `tools/sources/CREDITS.md`. Wikimedia rate-limits: send a User-Agent, pause between downloads.
-- Lock screen `unlock.png` = "Omarchy" in Great Vibes, ink (matches the signature).
+- Lock screen `unlock.png` = Omarchy's original pixel logo recolored to ink.
 - Fonts (owner's machine, not shippable in a theme): mono BlexMono Nerd Font (IBM Plex Mono),
   sans Libre Franklin, serif Newsreader (via ~/.config/fontconfig/conf.d/60-omapaper.conf;
   Omarchy's /etc/fonts/conf.d/50-omarchy.conf *assigns* generics, so use prepend_first matches),
@@ -60,7 +62,10 @@ something (code/terminal), editorial typography. Light first; dark variant after
   "Clear ink" palette, graphite accent, opacity 0.995/0.985, 11 art + 3 script wallpapers
 - [x] Palette A ("Clear ink") chosen.
 - [x] v5: renamed OmaPaper; 20 art wallpapers (people/architecture/sky/animals); signature logo
-- [ ] Owner to react to v5 wallpapers + signature; pick shadow preset; terminal font 9 vs 10
+- [x] v6: owner loved v5 art; original Omarchy logo; caption lower-right; foot font size 10;
+  `tools/shadow-picker.sh` pop-up (owner choosing)
+- [ ] Optional extras offered: boot/login screen (`omarchy plymouth set by theme omapaper`),
+  screensaver text, shell.toml (bar/lock/notification tuning), btop/Neovim/browser check
 - [ ] Display: 13.3" 1920x1080 (168 DPI) at 1.25x = 1536x864 logical, like a 13" MacBook. Foot
   font size=9 (Plex Mono runs small; 10 is the likely sweet spot), bar base-size 12.
 - [ ] Dark variant (`omapaper-dark`?) once light is dialed in; needs a dark mode in make-wallpapers.sh

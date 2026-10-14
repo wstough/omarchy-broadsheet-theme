@@ -54,12 +54,13 @@ grep -vE '^\s*(#|$)' tools/wallpapers.list | while IFS='|' read -r out src style
   esac
   magick "$TMP/p.png" +level-colors "$INK","$PAPER" "$TMP/c.png"
 
-  # 3. Caption plate: a small paper label with a hairline, like a photo caption.
+  # 3. Caption plate: a small paper label in the lower-right corner with a hairline, like a photo credit.
   if [[ -n $caption ]]; then
-    tw=$(magick -font Newsreader-16pt-Italic -pointsize 30 label:"$caption" -format '%w' info:)
-    magick "$TMP/c.png" -fill "$PAPER" -draw "rectangle 0,1250 $((tw+260)),1440" \
-      -fill "$RULE" -draw "rectangle 120,1290 $((tw+140)),1291" \
-      -font Newsreader-16pt-Italic -pointsize 30 -fill "$CAP" -gravity northwest -annotate +120+1306 "$caption" \
+    tw=$(magick -font Newsreader-16pt-Italic -pointsize 22 label:"$caption" -format '%w' info:)
+    x0=$((W - tw - 96))
+    magick "$TMP/c.png" -fill "$PAPER" -draw "rectangle $x0,$((H - 92)) $W,$H" \
+      -fill "$RULE" -draw "rectangle $((x0 + 48)),$((H - 64)) $((W - 48)),$((H - 64))" \
+      -font Newsreader-16pt-Italic -pointsize 22 -fill "$CAP" -gravity southeast -annotate +48+24 "$caption" \
       "backgrounds/$out.png"
   else
     cp "$TMP/c.png" "backgrounds/$out.png"

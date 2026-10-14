@@ -28,5 +28,5 @@ All from Wikimedia Commons, public domain or CC0. Wallpapers are dithered/re-ink
 
 Commons pages: https://commons.wikimedia.org/wiki/File:<Commons file>
 
-Fonts used in the images: Newsreader (captions), Great Vibes (signature) — SIL OFL. The signature's y-tail is hand-drawn (tools/make-signature.py).
-The lock screen uses Great Vibes (SIL OFL).
+Fonts used in the images: Newsreader (captions), SIL OFL.
+The "OMARCHY" logo wallpapers and lock-screen logo are Omarchy's own artwork (MIT, from the stock flexoki-light theme), re-inked.
