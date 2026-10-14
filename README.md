@@ -8,6 +8,8 @@ dark enough to read comfortably on paper (WCAG 4.5:1+; `tools/check-palette.py`,
 
 ![OmaPaper preview](preview.png)
 
+There's a night edition too: [OmaPaper Dark](https://github.com/wstough/omarchy-omapaper-dark-theme).
+
 ## Install
 
 ```bash
@@ -24,7 +26,7 @@ omarchy theme install https://github.com/wstough/omarchy-omapaper-theme
 | `icons.theme` | GTK icon set name. |
 | `unlock.png` | Logo on the lock screen. |
 | `preview.png` | Thumbnail in the theme picker. |
-| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art), `shadow-picker.sh` (pop-up shadow chooser), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
+| `tools/` | `make-wallpapers.sh` + `wallpapers.list` (art; `--dark` builds OmaPaper Dark from `wallpapers-dark.list`), `shadow-picker.sh` (pop-up shadow chooser), `check-palette.py`, `palette-preview.py`, `try-shadow.sh`. |
 
 ## Recommended window style and fonts
 

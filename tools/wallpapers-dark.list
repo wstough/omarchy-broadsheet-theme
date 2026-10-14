@@ -1,0 +1,20 @@
+# OmaPaper Dark collection. Same columns as wallpapers.list; built with: tools/make-wallpapers.sh --dark
+# Prefer naturally dark images (black museum backdrops, night skies, shadowy prints); light-ground
+# prints use a "-neg" style so they print as light lines on the dark page.
+# out             | source               | style          | px | zoom     | gravity   | x,y      | backdrop | gamma | caption
+# — People —
+01-herschel       | herschel.jpg         | grain          | 2  | 1.0      | north     | 0,330    | keep     | 0.85  | Fig. 1 — Sir John Herschel, photograph by Julia Margaret Cameron, 1867
+02-julia-jackson  | julia-jackson.jpg    | grain          | 2  | 1.0      | north     | 0,520    | keep     | 1.1   | Fig. 2 — Julia Jackson, photograph by Julia Margaret Cameron, 1867
+03-nadar          | nadar.jpg            | pixel          | 3  | 1.0      | north     | 0,260    | keep     | 1     | Fig. 3 — Self-portrait, Félix Nadar
+04-aelius         | aelius-verus.jpg     | pixel          | 4  | fit:1.1  | southeast | 200,-90  | ink      | 1     | Fig. 4 — Aelius Verus, Ancient Agora Museum, Athens
+# — City —
+06-dore-rail      | dore-rail.jpg        | engraving      | 1  | 1.05     | center    | 0,0      | keep     | 1.3   | Fig. 6 — Over London by Rail, Gustave Doré, 1872
+07-ludgate        | dore-ludgate.jpg     | engraving-neg  | 1  | 1.0      | north     | 0,420    | keep     | 1.1   | Fig. 7 — Ludgate Hill, a block in the street, Gustave Doré, 1872
+08-drawbridge     | drawbridge.jpg       | engraving-neg  | 1  | 1.0      | north     | 0,600    | keep     | 1     | Fig. 8 — The Drawbridge, Carceri d’invenzione, Giovanni Battista Piranesi, 1750
+# — Sky —
+09-eclipse        | eclipse.jpg          | halftone       | 3  | 1.15     | center    | 0,-40    | keep     | 1     | Fig. 9 — Total eclipse of the sun, E. L. Trouvelot, 1878
+10-saturn         | saturn.jpg           | grain          | 2  | 1.12     | center    | 0,-30    | keep     | 1     | Fig. 10 — The planet Saturn, E. L. Trouvelot, 1874
+11-earthrise      | earthrise.jpg        | halftone       | 3  | 1.0      | center    | 0,0      | keep     | 1.3   | Fig. 11 — Earthrise, photographed by Bill Anders, Apollo 8, 1968
+# — Animals —
+12-cat            | cat.jpg              | halftone-neg   | 3  | 1.0      | center    | 0,0      | keep     | 1     | Fig. 12 — Cat galloping, Animal Locomotion, Eadweard Muybridge, 1887
+13-siphonophorae  | siphonophorae.jpg    | grain-neg      | 2  | 1.0      | north     | 0,300    | keep     | 1     | Fig. 13 — Siphonophorae, from Kunstformen der Natur, Ernst Haeckel, 1904

@@ -64,12 +64,12 @@ something (code/terminal), editorial typography. Light first; dark variant after
 - [x] v5: renamed OmaPaper; 20 art wallpapers (people/architecture/sky/animals); signature logo
 - [x] v6: owner loved v5 art; original Omarchy logo; caption lower-right; foot font size 10;
   `tools/shadow-picker.sh` pop-up (owner choosing)
-- [ ] Optional extras offered: boot/login screen (`omarchy plymouth set by theme omapaper`),
-  screensaver text, shell.toml (bar/lock/notification tuning), btop/Neovim/browser check
-- [ ] Display: 13.3" 1920x1080 (168 DPI) at 1.25x = 1536x864 logical, like a 13" MacBook. Foot
-  font size=9 (Plex Mono runs small; 10 is the likely sweet spot), bar base-size 12.
-- [ ] Dark variant (`omapaper-dark`?) once light is dialed in; needs a dark mode in make-wallpapers.sh
-  (ink paper, bone dots); Aelius Verus source is ready
+- Display: 13.3" 1920x1080 (168 DPI) at 1.25x = 1536x864 logical. Foot font size 10 (owner approved).
+- [x] Boot/login screen set from OmaPaper (`omarchy plymouth set by theme omapaper`); apps checked OK.
+- [x] Dark variant v1: separate repo omarchy-omapaper-dark-theme at ../omapaper-dark (see its CLAUDE.md).
+  `tools/make-wallpapers.sh --dark` builds it from `tools/wallpapers-dark.list` (+ `-neg` styles,
+  `ink` backdrop). Owner rule: no artworks shared with the light set except the logo.
+- [ ] Owner to review dark; then shell.toml polish for both; real preview screenshots
 - [ ] More statues / wallpapers
 - [ ] Fonts: owner likes NYT fonts (proprietary) -> free lookalikes. Installed 2026-10-13:
   Newsreader, Libre Franklin, Courier Prime (~/.local/share/fonts/omapaper), IBM Plex +

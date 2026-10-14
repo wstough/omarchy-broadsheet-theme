@@ -5,7 +5,7 @@ All from Wikimedia Commons, public domain or CC0. Wallpapers are dithered/re-ink
 | File | Work | Commons file | License |
 |------|------|--------------|---------|
 | antoninus-pius.jpg | Antoninus Pius (Farnese), Museo Archeologico Nazionale di Napoli | MANNapoli 6078 Antoninus Pius Farnese.jpg | CC0 |
-| aelius-verus.jpg | Aelius Verus, Ancient Agora Museum, Athens (for the dark variant) | Aelius Verus Ancient Agora Museum S335 Athens.jpg | CC0 |
+| aelius-verus.jpg | Aelius Verus, Ancient Agora Museum, Athens (dark set) | Aelius Verus Ancient Agora Museum S335 Athens.jpg | CC0 |
 | constantine.jpg | Bronze colossus of Constantine, Capitoline Museums (photo: D. Benjamin Miller) | Colossal head of Constantine (M.C. inv. 1072), August 24, 2021.jpg | Public domain |
 | pantheon-dome.jpg | Dome of the Pantheon, Rome | Pantheon (Rome), Dome interior.jpg | CC0 |
 | colosseum-piranesi.jpg | Piranesi, Veduta dell'Anfiteatro Flavio, Vedute di Roma (Rijksmuseum RP-P-1941-615) | Colosseum te Rome Veduta dell'Anfiteatro Flavio ... RP-P-1941-615.jpg | CC0 |
@@ -30,3 +30,10 @@ Commons pages: https://commons.wikimedia.org/wiki/File:<Commons file>
 
 Fonts used in the images: Newsreader (captions), SIL OFL.
 The "OMARCHY" logo wallpapers and lock-screen logo are Omarchy's own artwork (MIT, from the stock flexoki-light theme), re-inked.
+
+## Dark set sources (OmaPaper Dark; full captions in that repo's CREDITS.md)
+
+herschel.jpg, julia-jackson.jpg (Julia Margaret Cameron, 1867), nadar.jpg (Nadar self-portrait),
+dore-rail.jpg, dore-ludgate.jpg (Gustave Doré, London: A Pilgrimage, 1872), drawbridge.jpg (Piranesi, 1750),
+eclipse.jpg, saturn.jpg (E. L. Trouvelot), earthrise.jpg (NASA, Apollo 8), cat.jpg (Muybridge, cropped),
+siphonophorae.jpg (Haeckel). All public domain or CC0 on Wikimedia Commons.
